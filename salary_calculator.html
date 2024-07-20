@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator - Daniel Yun</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="salary_calculator.js" defer></script>
+    <style>
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Resume of Daniel Yun</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Other pages</h3>
+            <a href="external1.html">Work Experience</a>
+            <a href="external2.html">Educational Experience</a>
+            <a href="external3.html">Skills</a>
+            <a href="salary_calculator.html">Salary Calculator</a>
+        </div>
+        <div class="content">
+            <h2>Salary Calculator</h2>
+            <form id="salaryForm">
+                <div class="form-group">
+                    <label for="hourlyRate">Hourly Rate:</label>
+                    <input type="number" id="hourlyRate" name="hourlyRate" required>
+                </div>
+                <div class="form-group">
+                    <label for="hoursPerWeek">Hours per Week:</label>
+                    <input type="number" id="hoursPerWeek" name="hoursPerWeek" required>
+                </div>
+                <button type="button" onclick="calculateSalary()">Calculate Salary</button>
+            </form>
+            <p id="result"></p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="mailto:dyun2@albany.edu">Email me</a>
+    </div>
+</body>
+</html>

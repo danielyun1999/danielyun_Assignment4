@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Example</title>
+    <style>
+        @media only screen and (max-width: 575px) {
+            .container {
+                display: block;
+            }
+            .sidebar, .content {
+                width: 90%;
+                margin: 10px auto;
+                float: none;
+            }
+            .sidebar {
+                background-color: #b0b0b0;
+                padding: 15px;
+                box-sizing: border-box;
+                text-align: left;
+            }
+            .content {
+                background-color: white;
+                padding: 15px;
+                box-sizing: border-box;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #333; color: white; padding: 10px; text-align: center;">
+        <h1>Resume of Daniel Yun</h1>
+    </div>
+    <div class="container" style="width: 90%; margin: 15px auto; background-color: #d0d0d0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex;">
+        <div class="sidebar" style="width: 25%; background-color: #b0b0b0; padding: 15px; box-sizing: border-box; text-align: left;">
+            <h3>Other pages</h3>
+            <a href="external1.html" style="display: block; color: #000; text-decoration: none; margin-bottom: 8px;">Work Experience</a>
+            <a href="external2.html" style="display: block; color: #000; text-decoration: none; margin-bottom: 8px;">Educational Experience</a>
+            <a href="external3.html" style="display: block; color: #000; text-decoration: none; margin-bottom: 8px;">Skills</a>
+            <a href="salary_calculator.html" style="display: block; color: #000; text-decoration: none; margin-bottom: 8px;">Salary Calculator</a> 
+        </div>
+        <div class="content" style="width: 70%; padding: 15px; box-sizing: border-box; background-color: white; text-align: left;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 5px;">Skills</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 8px;">Programming: Java, C++</li>
+                <li style="margin-bottom: 8px;">Gaming Development</li>
+                <li style="margin-bottom: 8px;">Database Management</li>
+            </ul>
+        </div>
+    </div>
+    <div style="background-color: #333; color: white; padding: 10px 0; text-align: center;">
+        <a href="mailto:dyun2@albany.edu" style="color: white; text-decoration: none;">Email me</a>
+    </div>
+</body>
+</html>
